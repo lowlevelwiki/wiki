@@ -1,0 +1,32 @@
+---
+import Sidebar from "../components/Sidebar.astro";
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <Sidebar />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: #f5e0dc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+  }
+
+  main {
+    padding: 24px;
+  }
+</style>
