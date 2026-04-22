@@ -1,4 +1,9 @@
+---
+import logo from "../assets/logo.png";
+---
+
 <aside class="sidebar">
+  <img class="logo" src={logo.src} alt="Low Level Wiki" />
   <nav>
     <ul class="navbar-list">
       <li><a href="https://discord.gg/v9cjaBsnzJ">Discord</a></li>
@@ -22,5 +27,11 @@
         margin: 0;
       }
     }
+  }
+
+  .logo {
+    width: 10em;
+    display: block;
+    margin: 24px auto auto;
   }
 </style>
