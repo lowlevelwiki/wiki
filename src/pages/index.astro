@@ -5,4 +5,24 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout>
   <Welcome />
+  <div class="split-container">
+    <div class="split">
+      <h2>Hardware</h2>
+      <h3>Memory</h3>
+      <ul>
+        <li><a href="/wiki/a20-line">A20 Line</a></li>
+      </ul>
+    </div>
+    <div class="split"></div>
+  </div>
 </MainLayout>
+
+<style>
+  .split-container {
+    display: flex;
+  }
+
+  .split {
+    flex: 1;
+  }
+</style>

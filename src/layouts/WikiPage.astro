@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from "astro:content";
+import MainLayout from "./MainLayout.astro";
+
+type Props = CollectionEntry<"wiki">["data"];
+const { title } = Astro.props;
+---
+
+<MainLayout>
+  <article>
+    <h1>{title}</h1>
+    <slot />
+  </article>
+</MainLayout>
