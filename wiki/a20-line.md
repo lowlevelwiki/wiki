@@ -65,3 +65,5 @@ assembly example
 Sources:
 
 - [www.mega-tokyo.com/os/os-faq-memory.html#enable_a20](https://web.archive.org/web/20030219234256/http://www.mega-tokyo.com/os/os-faq-memory.html#enable_a20) (Internet Archive)
+- [wikipedia.org/wiki/A20_line](https://en.wikipedia.org/wiki/A20_line)
+- [osdev.wiki/wiki/A20_Line](https://osdev.wiki/wiki/A20_Line)
