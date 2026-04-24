@@ -1,0 +1,20 @@
+---
+import { getCollection, render, type CollectionEntry } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+  const posts = (await getCollection("wiki")) as CollectionEntry<"wiki">[];
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"wiki">;
+
+const post = Astro.props as Props;
+const { Content } = await render(post.body);
+---
+
+<MainLayout>
+  <Content />
+</MainLayout>
