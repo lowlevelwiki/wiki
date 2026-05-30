@@ -57,10 +57,7 @@ Here is the flowchart for enabling it:
 
 The data port is `0x60`, the command port is `0x64`, the disable command is
 `0xAD`, the enable command is `0xAE`, the "read control output port" command is
-`0xD0` and the "write control output port" command is `0xD1`. You can find an
-assembly example
-[here](https://github.com/zinix-org/lime-boot/blob/f5ebc3af3e3a9584550d430523175b1f1779c212/src/stage2/entry.asm#L81)
-(GPL licensed).
+`0xD0` and the "write control output port" command is `0xD1`.
 
 Sources:
 
